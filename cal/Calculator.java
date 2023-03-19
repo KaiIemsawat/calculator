@@ -40,19 +40,32 @@ public class Calculator {
 	}
 	
 //	create perform operation method
-	public void performOperation(double oOne, double oTwo, String operation) {
-		if (operation.equals("+")) {
-			setResult(oOne + oTwo);
-			System.out.println(getResult());
-		}
-		else if (operation.equals("-")) {
-			setResult(oOne - oTwo);
-			System.out.println(getResult());
-		}
-		else {
-			System.out.println("Please input either '+' or '-'");
-		}
-			
-	}
+//	public void performOperation(double oOne, double oTwo, String operation) {
+//		if (operation.equals("+")) {
+//			setResult(oOne + oTwo);
+//			System.out.println(getResult());
+//		}
+//		else if (operation.equals("-")) {
+//			setResult(oOne - oTwo);
+//			System.out.println(getResult());
+//		}
+//		else {
+//			System.out.println("Please input either '+' or '-'");
+//		}
+//			
+//	}
 
+//	create perform operation method
+	public void performOperation() {
+		if (operation.equals("+")) {
+		result = operandOne + operandTwo;
+	}
+	else if (operation.equals("-")) {
+		result = operandOne - operandTwo;
+	}
+	else {
+		System.out.println("Please input either '+' or '-'");
+	}
+	}
+	
 }
